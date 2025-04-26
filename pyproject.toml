@@ -1,0 +1,26 @@
+[project]
+name = "sci"
+version = "0.1.0"
+description = ""
+authors = [
+    {name = "toriel",email = "ruinstoriel@proton.me"}
+]
+readme = "README.md"
+requires-python = ">=3.12"
+dependencies = [
+    "scikit-learn (>=1.6.1,<2.0.0)",
+    "matplotlib (>=3.10.1,<4.0.0)",
+    "pandas (>=2.2.3,<3.0.0)",
+    "openpyxl (>=3.1.5,<4.0.0)",
+    "jieba (>=0.42.1,<0.43.0)",
+    "iterative-stratification",
+    "thulac",
+]
+
+[tool.poetry]
+packages = [{include = "sci", from = "src"}]
+
+
+[build-system]
+requires = ["poetry-core>=2.0.0,<3.0.0"]
+build-backend = "poetry.core.masonry.api"
